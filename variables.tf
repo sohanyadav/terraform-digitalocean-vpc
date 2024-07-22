@@ -29,8 +29,8 @@ variable "region" {
 }
 variable "managedby" {
   type        = string
-  default     = "opsstation"
-  description = "ManagedBy, eg 'opsstation'."
+  default     = "example"
+  description = "ManagedBy, eg 'sohanyadav'."
 }
 
 variable "ip_range" {

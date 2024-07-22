@@ -17,7 +17,7 @@ This Terraform module creates structured vpc for digitalocean resources with spe
 
 ```hcl
 module "vpc" {
-  source = "git::https://github.com/opsstation/terraform-digitalocean-vpc.git?ref=v1.0.0"
+  source = "git::https://github.com/sohanyadav/terraform-digitalocean-vpc.git?ref=v1.0.0"
   name        = "network"
   environment = "test"
   label_order = ["name", "environment"]
@@ -35,21 +35,21 @@ Please ensure you specify the correct 'source' path for the module.
 - `environment`: The environment (e.g., "test", "production").
 - `region`: The DigitalOcean region where resources will be deployed.
 - `ip_range`: The IP range for the VPC.
-- `managedby`:  ManagedBy, eg 'opsstation'.
+- `managedby`:  ManagedBy, eg 'sohanyadav'.
 - `description`: A free-form text field up to a limit of 255 characters to describe the VPC.
 
 ## Module Outputs
 - This module currently does not provide any outputs.
 
 # Examples
-For detailed examples on how to use this module, please refer to the '[example](https://github.com/opsstation/terraform-digitalocean-vpc/tree/master/_example)' directory within this repository.
+For detailed examples on how to use this module, please refer to the '[example](https://github.com/sohanyadav/terraform-digitalocean-vpc/tree/master/_example)' directory within this repository.
 
 ## Authors
 Your Name
 Replace '[License Name]' and '[Your Name]' with the appropriate license and your information. Feel free to expand this README with additional details or usage instructions as needed for your specific use case.
 
 ## License
-This project is licensed under the MIT License - see the [LICENSE](https://github.com/opsstation/terraform-digitalocean-vpc/blob/master/LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/sohanyadav/terraform-digitalocean-vpc/blob/master/LICENSE) file for details.
 
 
 
@@ -71,7 +71,7 @@ This project is licensed under the MIT License - see the [LICENSE](https://githu
 
 | Name | Source | Version |
 |------|--------|---------|
-| <a name="module_labels"></a> [labels](#module\_labels) | git::https://github.com/opsstation/terraform-digitalocean-labels.git | v1.0.0 |
+| <a name="module_labels"></a> [labels](#module\_labels) | git::https://github.com/sohanyadav/terraform-digitalocean-labels.git | v1.0.0 |
 
 ## Resources
 
@@ -82,14 +82,14 @@ This project is licensed under the MIT License - see the [LICENSE](https://githu
 ## Inputs
 
 | Name | Description | Type | Default | Required |
-|------|-------------|------|---------|:--------:|
+|------|-------------|------|-----|:--------:|
 | <a name="input_description"></a> [description](#input\_description) | n/a | `string` | `"A free-form text field up to a limit of 255 characters to describe the VPC."` | no |
 | <a name="input_enabled"></a> [enabled](#input\_enabled) | Flag to control the droplet creation. | `bool` | `true` | no |
 | <a name="input_environment"></a> [environment](#input\_environment) | Environment (e.g. `prod`, `dev`, `staging`). | `string` | `""` | no |
 | <a name="input_ip_range"></a> [ip\_range](#input\_ip\_range) | The range of IP addresses for the VPC in CIDR notation. | `string` | `""` | no |
 | <a name="input_label_order"></a> [label\_order](#input\_label\_order) | Label order, e.g. `name`,`application`. | `list(string)` | <pre>[<br>  ""<br>]</pre> | no |
-| <a name="input_managedby"></a> [managedby](#input\_managedby) | ManagedBy, eg 'opsstation'. | `string` | `"opsstation"` | no |
-| <a name="input_name"></a> [name](#input\_name) | A name for the VPC. | `string` | `""` | no |
+| <a name="input_managedby"></a> [managedby](#input\_managedby) | ManagedBy, eg 'sohanyadav'. | `string` | `"example"`| no |
+| <a name="input_name"></a> [name](#input\_name) | A name for the VPC. | `string` | `""`| no |
 | <a name="input_region"></a> [region](#input\_region) | The DigitalOcean region slug for the VPC's location. | `string` | `""` | no |
 
 ## Outputs
