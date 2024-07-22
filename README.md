@@ -82,14 +82,14 @@ This project is licensed under the MIT License - see the [LICENSE](https://githu
 ## Inputs
 
 | Name | Description | Type | Default | Required |
-|------|-------------|------|-----|:--------:|
+|------|-------------|------|---------|:--------:|
 | <a name="input_description"></a> [description](#input\_description) | n/a | `string` | `"A free-form text field up to a limit of 255 characters to describe the VPC."` | no |
 | <a name="input_enabled"></a> [enabled](#input\_enabled) | Flag to control the droplet creation. | `bool` | `true` | no |
 | <a name="input_environment"></a> [environment](#input\_environment) | Environment (e.g. `prod`, `dev`, `staging`). | `string` | `""` | no |
 | <a name="input_ip_range"></a> [ip\_range](#input\_ip\_range) | The range of IP addresses for the VPC in CIDR notation. | `string` | `""` | no |
 | <a name="input_label_order"></a> [label\_order](#input\_label\_order) | Label order, e.g. `name`,`application`. | `list(string)` | <pre>[<br>  ""<br>]</pre> | no |
-| <a name="input_managedby"></a> [managedby](#input\_managedby) | ManagedBy, eg 'sohanyadav'. | `string` | `"example"`| no |
-| <a name="input_name"></a> [name](#input\_name) | A name for the VPC. | `string` | `""`| no |
+| <a name="input_managedby"></a> [managedby](#input\_managedby) | ManagedBy, eg 'sohanyadav'. | `string` | `"example"` | no |
+| <a name="input_name"></a> [name](#input\_name) | A name for the VPC. | `string` | `""` | no |
 | <a name="input_region"></a> [region](#input\_region) | The DigitalOcean region slug for the VPC's location. | `string` | `""` | no |
 
 ## Outputs
